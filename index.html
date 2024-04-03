@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .head {
+      width: 100%;
+      background-color: aqua;
+      display: flex;
+      padding: 10px;
+      height: 50px;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 16px;
+      padding: 0px 20px;
+      border-right: 2px solid gray;
+    }
+
+    .dis {
+      line-height: 30px;
+      height: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0px 20px;
+      overflow: hidden;
+      position: absolute;
+      left: 115px;
+      /* outline: 1px solid; */
+      top: 10px;
+    }
+
+    ul li {
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <h1 class="dis">最新公告</h1>
+    <ul class="dis">
+      <li>把大象装冰箱总共分几步？</li>
+      <li>1. 邓哥打开冰箱门</li>
+      <li>2. 邓哥把大象放进去</li>
+      <li>3. 邓哥关上冰箱门</li>
+      <!-- <li>把大象装冰箱总共分几步？</li> -->
+    </ul>
+  </div>
+  <script>
+    // let ul = document.querySelector('ul')
+//     function clone() {
+//   let newObj = ul.children[0].cloneNode(true)
+//   ul.append(newObj)
+// }
+// clone()
+    // let itemHeight = 30
+    // let curIndex = 0
+    // let duration = 2000//每隔一段时间滚动到下一条
+    // // console.log(ul.scrollTop);
+    // setInterval(move, duration)
+    // function move() {
+    //   //每隔一段时间滚动到一段像素，类似动画
+    //   let from = itemHeight * curIndex//滚动起始距离
+    //   curIndex++
+    //   let to = itemHeight * curIndex//滚动结束距离
+    //   //注意：每次变化的总时间不能超过外边的间隔时间
+    //   //即totalTime<=duration
+    //   let totalTime = 1000//变化的的总时间
+    //   let everyTime = 50//变化的间隔时间
+    //   let times = totalTime / everyTime//变化的总次数
+    //   let length = (to - from) / times//每次变化的像素
+    //   let timeId = setInterval(function () {
+    //     //从from滚动到to
+    //     from += length
+    //     // ul.scrollTop = from
+    //     console.log(from);
+    //     if (from >= to) {
+    //       //已滚动到目标值
+    //       clearInterval(timeId)//停止计时器
+    //       if (curIndex === ul.children.length - 1) {
+    //         from = 0
+    //         curIndex = 0
+    //       }
+    //     }
+    //     ul.scrollTop = from
+    //   }, everyTime)
+    // }
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
